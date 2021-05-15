@@ -1,0 +1,30 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os, time, subprocess, sys
+
+os.system('echo "* * * * * netstat -an|awk \'/^tcp/{++S[\$NF]}END{for(a in S) print a,S[a]}\' >/tmp/TCP_connection.stat" >> /var/spool/cron/root')
+os.system('yum -y install redhat-lsb-core')
+os.system('yum -y install https://repo.zabbix.com/zabbix/5.0/rhel/7/x86_64/zabbix-release-5.0-1.el7.noarch.rpm')
+os.system('yum clean all')
+os.system('yum -y install zabbix-agent')
+os.system('sed -i "117c Server=10.163.82.70" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "143G" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "144c StartAgents=10" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "144G" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "160d" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "170c Hostname=`ifconfig -a | grep inet | grep -v 127.0.0.1 | grep -v inet6 | awk \'{print $2}\' | tr -d "addr:"`" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "282G" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "283c Timeout=30" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "283G" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "332G" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "333c UnsafeUserParameters=1" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "333G" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "343G" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "344c UserParameter=custom.os.version,lsb_release -a | sed -n \\"3,2p\\" | awk \'{for\(i=1;i<2;i++\){\$i=\\"\\"};print \$0}\' | sed \'s/^[ ]*//g\'" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "344G" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "345c UserParameter=tcp.status[*],grep \$1 /tmp/TCP_connection.stat >> /dev/null && grep \$1 /tmp/TCP_connection.stat | awk \'{print \$\$2}\' || echo 0" /etc/zabbix/zabbix_agentd.conf')
+os.system('sed -i "345G" /etc/zabbix/zabbix_agentd.conf')
+os.system('systemctl start zabbix-agent')
+os.system('systemctl enable zabbix-agent')
+os.system('rm -rf ./uh_aws_zai.py')
