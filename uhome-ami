@@ -34,10 +34,10 @@ eval sed -i 's/"#Port 22"/"Port 22"/' /etc/ssh/sshd_config
 sed -i "/Port 22/a\Port 9900"  /etc/ssh/sshd_config
 cat /etc/ssh/sshd_config |grep 9900
 cat /etc/ssh/sshd_config |grep 22
-systemctl restast sshd
+systemctl restart sshd
 systemctl status sshd
 
-
-cp /etc/sudoers.d/90-cloud-init-users sre-team
 cd /etc/sudoers.d
+cp /etc/sudoers.d/90-cloud-init-users sre-team
 eval sed -i 's/"centos ALL=(ALL) NOPASSWD:ALL"/"sre-team ALL=(ALL) NOPASSWD:ALL"/' /etc/sudoers.d/sre-team
+
