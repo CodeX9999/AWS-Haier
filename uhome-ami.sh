@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 sudo -i
 su - cloud-user
 mkdir /home/cloud-user/.ssh
