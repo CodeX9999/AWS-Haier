@@ -39,4 +39,5 @@ systemctl status sshd
 
 
 cp /etc/sudoers.d/90-cloud-init-users sre-team
+cd /etc/sudoers.d/
 eval sed -i 's/"centos ALL=(ALL) NOPASSWD:ALL"/"sre-team ALL=(ALL) NOPASSWD:ALL"/' /etc/sudoers.d/sre-team
