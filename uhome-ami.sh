@@ -27,19 +27,19 @@ echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCz4F4apuwry5Q9G1wsGAlxp1wvjY93xigqs06
 
 
 
-sudo echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDF3v8iifipDsGTsZA9VWpTcIeh8J+S4uLTaymZtNLLxCkJ++soAhzLgr0DuqkzjlNFVKHL3SNhgjDAs7Wyu3vLmxMt563iar3nGbTLVtQ9lPIzTUoKgjYxdXGP45XT5CxEUuk9y/m5qtlLkM1Bawlgxyogsq3Vla1FIWdMN2DSF4z4L85C75JAELsC1EuZtHeW5X9zbqo5PTK5rypKTc6NXH8Chw0LDC8x/WG6cv7CBVwcLfBzCN0y2BJKv/yPNhA7UF+DxR1fPM6h8d86yRhaC0O+SbqEi3Q73g2Gz7TTJibJj7o916t0g+EQe3G+tD0DKKl6zcNoqVmZE1jgSXkh AWSKey_Uhome >>/home/centos/.ssh/authorized_keys
-sudo echo ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAwD+t4qI30c1emlGNmUvwssORmwA/t+cUImAOSoEq61gtYS/qMwlbPAXVd0F2RQTAmDVvvWXqd9m/SUTG3YdtcpkLWrhT81/ZC1hEYtfYqGK24zeNn1k+1eYIX7UbQVHjtA9kxTOe/leFTZokF0M3KiUWGsnl4DT42SUg/qC2IdPlIroBZEeXYPADig73CtPSe9TWXawqdb9keJGYa8wkJ8Te8YdxWwm6oxbuCV3/+3NblYfW0kluJy8BGKhkb04Q7mXYGYj9vHPPT3CO61bmODTikKrnR6A0/k7HB97dq6/d9pfOCPREULkbhDK2+zzMVOzVEIJ4A3IfXeOXIogZQw== rsa 2048-072718tianchuan >>/home/centos/.ssh/authorized_keys
-sudo echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Hj2vp3ppMZQChKVKLuhi7AXPioEygQhTGlDLWDPkBkxvYvF2LXY81YEi/B2CLoR0vSAW9go3c4mAl4Rqp5WDAc9qT6zbB3x1/nNhMcRF8ut49Ccc50Y/oSKJOPjoTLq6uLELh050l0DkcSXYUmWRVM1x4qkEtURfa+NhddA3SggPkHjU7qw4VdHEJcNFbNqmQVf2yjzGwvJ+OTOlt/gOcTzSqvyC4MHLoB9r7MjqbXaBbQEdW8SOTlQlgSijs/uljXbMky1NtCWP4LhswNv3n36pXC6gq39YoTk562D2e+o3iDf3ehnRsOfx2JH7ZIIde7+HShopgFn1vAzVs0Df xuping@2021 >>/home/centos/.ssh/authorized_keys
+echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDF3v8iifipDsGTsZA9VWpTcIeh8J+S4uLTaymZtNLLxCkJ++soAhzLgr0DuqkzjlNFVKHL3SNhgjDAs7Wyu3vLmxMt563iar3nGbTLVtQ9lPIzTUoKgjYxdXGP45XT5CxEUuk9y/m5qtlLkM1Bawlgxyogsq3Vla1FIWdMN2DSF4z4L85C75JAELsC1EuZtHeW5X9zbqo5PTK5rypKTc6NXH8Chw0LDC8x/WG6cv7CBVwcLfBzCN0y2BJKv/yPNhA7UF+DxR1fPM6h8d86yRhaC0O+SbqEi3Q73g2Gz7TTJibJj7o916t0g+EQe3G+tD0DKKl6zcNoqVmZE1jgSXkh AWSKey_Uhome >>/home/centos/.ssh/authorized_keys
+echo ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAwD+t4qI30c1emlGNmUvwssORmwA/t+cUImAOSoEq61gtYS/qMwlbPAXVd0F2RQTAmDVvvWXqd9m/SUTG3YdtcpkLWrhT81/ZC1hEYtfYqGK24zeNn1k+1eYIX7UbQVHjtA9kxTOe/leFTZokF0M3KiUWGsnl4DT42SUg/qC2IdPlIroBZEeXYPADig73CtPSe9TWXawqdb9keJGYa8wkJ8Te8YdxWwm6oxbuCV3/+3NblYfW0kluJy8BGKhkb04Q7mXYGYj9vHPPT3CO61bmODTikKrnR6A0/k7HB97dq6/d9pfOCPREULkbhDK2+zzMVOzVEIJ4A3IfXeOXIogZQw== rsa 2048-072718tianchuan >>/home/centos/.ssh/authorized_keys
+echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Hj2vp3ppMZQChKVKLuhi7AXPioEygQhTGlDLWDPkBkxvYvF2LXY81YEi/B2CLoR0vSAW9go3c4mAl4Rqp5WDAc9qT6zbB3x1/nNhMcRF8ut49Ccc50Y/oSKJOPjoTLq6uLELh050l0DkcSXYUmWRVM1x4qkEtURfa+NhddA3SggPkHjU7qw4VdHEJcNFbNqmQVf2yjzGwvJ+OTOlt/gOcTzSqvyC4MHLoB9r7MjqbXaBbQEdW8SOTlQlgSijs/uljXbMky1NtCWP4LhswNv3n36pXC6gq39YoTk562D2e+o3iDf3ehnRsOfx2JH7ZIIde7+HShopgFn1vAzVs0Df xuping@2021 >>/home/centos/.ssh/authorized_keys
 
 
-sudo eval sed -i 's/"#Port 22"/"Port 22"/' /etc/ssh/sshd_config
-sudo sed -i "/Port 22/a\Port 9900"  /etc/ssh/sshd_config
-sudo cat /etc/ssh/sshd_config |grep 9900
-sudo cat /etc/ssh/sshd_config |grep 22
-sudo systemctl restart sshd
-sudo systemctl status sshd
+eval sed -i 's/"#Port 22"/"Port 22"/' /etc/ssh/sshd_config
+sed -i "/Port 22/a\Port 9900"  /etc/ssh/sshd_config
+cat /etc/ssh/sshd_config |grep 9900
+cat /etc/ssh/sshd_config |grep 22
+systemctl restart sshd
+systemctl status sshd
 
-sudo cd /etc/sudoers.d
-sudo cp /etc/sudoers.d/90-cloud-init-users sre-team
-sudo eval sed -i 's/"centos ALL=(ALL) NOPASSWD:ALL"/"sre-team ALL=(ALL) NOPASSWD:ALL"/' /etc/sudoers.d/sre-team
+cd /etc/sudoers.d
+cp /etc/sudoers.d/90-cloud-init-users sre-team
+eval sed -i 's/"centos ALL=(ALL) NOPASSWD:ALL"/"sre-team ALL=(ALL) NOPASSWD:ALL"/' /etc/sudoers.d/sre-team
 
