@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 mkdir /home/cloud-user/.ssh
-chown -R cloud-user:cloud-user /home/logquery/.ssh
+chown -R cloud-user:cloud-user /home/cloud-user/.ssh
 touch /home/cloud-user/.ssh/authorized_keys
-chown -R cloud-user:cloud-user /home/logquery/.ssh/authorized_keys
+chown -R cloud-user:cloud-user /home/cloud-user/.ssh/authorized_keys
 chmod 700 /home/cloud-user/.ssh
 chmod 600 /home/cloud-user/.ssh/authorized_keys
 echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClIvCTQ5JpqdQKnv73ih2Q0NceTRRRB910F3Nxwz628zb5Ta/0mxgRA9ciRS6GnvxF/K+BwVylbQ+ieTPzBuqpZrbBmAoCHI7ty5WjTDRMERVJuIhYZsXmGHCrSQJi+DRRjpB9+O4+g1/2zpSDPofdTxevF6EcBZ+Nu3dJtHJTizF2VvqJmP/QWyOIIos9HxVblVHFbkb4KJuSK/9MEqY9A/scsi9Oqk6t2Pejj52O5k12RiBEt+V1uDA1/ZUNSaTjJfM3gg9xAeISFxMDLZ63PMmN4TbZT6qIvkVbLtX6IvuqwmHviQTYXU39iF6CRhDKgM2/65m5J03PfXxVQ7zb cloud-user_20220512 >>/home/cloud-user/.ssh/authorized_keys
